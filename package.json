@@ -1,0 +1,78 @@
+{
+  "name": "kakao-elevator",
+  "version": "1.0.0",
+  "description": "Elevator Simulation SPA",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open",
+    "server": "http-server dist/",
+    "lint": "eslint '**/**/*.{js,ts,tsx}' --quiet --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpark011/kakao-elevator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpark011/kakao-elevator/issues"
+  },
+  "homepage": "https://github.com/jpark011/kakao-elevator#readme",
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/copy-webpack-plugin": "^6.0.0",
+    "@types/html-webpack-plugin": "^3.2.3",
+    "@types/jasmine": "^3.5.14",
+    "@types/mini-css-extract-plugin": "^0.9.1",
+    "@types/webpack-dev-server": "^3.11.0",
+    "@types/webpack-env": "^1.15.2",
+    "@types/workbox-webpack-plugin": "^5.1.4",
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.1.0",
+    "css-loader": "^4.2.2",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.1.0",
+    "html-loader": "^1.3.0",
+    "html-webpack-plugin": "^4.4.1",
+    "http-server": "^0.12.3",
+    "husky": "^4.3.0",
+    "karma": "^5.2.2",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-cli": "^2.0.0",
+    "karma-jasmine": "^4.0.1",
+    "karma-spec-reporter": "0.0.32",
+    "karma-webpack": "^4.0.2",
+    "lint-staged": "^10.3.0",
+    "mini-css-extract-plugin": "^0.11.0",
+    "prettier": "^2.1.1",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.3",
+    "workbox-webpack-plugin": "^5.1.3"
+  },
+  "dependencies": {}
+}

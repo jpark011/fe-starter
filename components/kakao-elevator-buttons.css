@@ -1,0 +1,25 @@
+:host {
+    display: block;
+}
+
+:host:not(:defined) {
+    display: none;
+}
+
+.button-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    justify-content: end;
+    align-content: end;
+    justify-items: end;
+    align-items: stretch;
+    /* display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: flex-end; */
+}
+
+button {
+    height: var(--kakao-elevator-size);
+}

@@ -1,0 +1,15 @@
+{
+    "name": "카카오커머스 화물 엘리베이터",
+    "short_name": "kakao-elev",
+    "theme_color": "#FAE100",
+    "background_color": "#FAE100",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "800x800"
+        }
+    ]
+  }
