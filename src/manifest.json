@@ -1,6 +1,6 @@
 {
-    "name": "카카오커머스 화물 엘리베이터",
-    "short_name": "kakao-elev",
+    "name": "APP NAME",
+    "short_name": "app-name",
     "theme_color": "#FAE100",
     "background_color": "#FAE100",
     "display": "standalone",

@@ -1,8 +1,8 @@
 {
-  "name": "kakao-elevator",
+  "name": "fe-starter",
   "version": "1.0.0",
-  "description": "Elevator Simulation SPA",
-  "main": "index.js",
+  "description": "Bootstrap FE projects",
+  "main": "src/main.ts",
   "scripts": {
     "test": "karma start",
     "build": "webpack",
@@ -23,15 +23,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jpark011/kakao-elevator.git"
+    "url": "git+https://github.com/jpark011/fe-starter"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jay Park",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jpark011/kakao-elevator/issues"
+    "url": "https://github.com/jpark011/fe-starter/issues"
   },
-  "homepage": "https://github.com/jpark011/kakao-elevator#readme",
+  "homepage": "https://github.com/jpark011/fe-starter",
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.1",
     "@types/copy-webpack-plugin": "^6.0.0",

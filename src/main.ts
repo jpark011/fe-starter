@@ -1,12 +1,8 @@
 // Custom Element Registration
 (async () => {
-    const { KakaoAppElevator } = await import(/* webpackChunkName: "kakao-app-elevator" */ './components/kakao-app-elevator');
-    const { KakaoElevatorButtons } = await import(/* webpackChunkName: "kakao-elevator-buttons" */ './components/kakao-elevator-buttons');
-    const { KakaoElevatorCells } = await import(/* webpackChunkName: "kakao-elevator-cells" */ './components/kakao-elevator-cells');
+    const { AppSample } = await import(/* webpackChunkName: "app-sample" */ './components/app-sample');
 
-    customElements.get('kakao-app-elevator') ?? customElements.define('kakao-app-elevator', KakaoAppElevator);
-    customElements.get('kakao-elevator-cells') ?? customElements.define('kakao-elevator-cells', KakaoElevatorCells);
-    customElements.get('kakao-elevator-buttons') ?? customElements.define('kakao-elevator-buttons', KakaoElevatorButtons);
+    customElements.get('app-sample') ?? customElements.define('app-sample', AppSample);
 })();
 
 // PWA Service Worker
