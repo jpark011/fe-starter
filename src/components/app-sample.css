@@ -2,4 +2,5 @@
 }
 
 :host:not(:defined) {
+    display: none;
 }
