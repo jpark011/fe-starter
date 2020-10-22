@@ -1,7 +1,13 @@
 import htmlContent from './app-sample.html';
+import cssContent from './app-sample.css';
 
+/******************** Build HTML/CSS ********************/
 const templateElement = document.createElement('template');
 templateElement.innerHTML = htmlContent;
+const styleElement = document.createElement('style');
+styleElement.innerHTML = cssContent;
+templateElement.content.insertBefore(styleElement, templateElement.content.firstChild);
+/********************************************************/
 
 export const enum AppSampleAttr {}
 

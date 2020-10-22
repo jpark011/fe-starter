@@ -1,7 +1,7 @@
 import { AppSample } from './app-sample';
+const COMPONENT_NAME = 'app-sample';
 
-describe('AppSample Component', () => {
-    const COMPONENT_NAME = 'app-sample';
+describe(`${COMPONENT_NAME} Component`, () => {
     let component: AppSample;
 
     beforeAll(() => {

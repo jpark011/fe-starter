@@ -85,16 +85,7 @@ module.exports = {
             },
             {
                 test: /components\/.*\.css$/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name]-[hash].css',
-                        },
-                    },
-                    'extract-loader',
-                    'css-loader',
-                ],
+                use: ['css-loader'],
             },
             {
                 test: /\.tsx?$/,
