@@ -61,6 +61,12 @@ module.exports = {
                     name: 'vendors',
                     chunks: 'all',
                 },
+                common: {
+                    test: /(services\/.*\.ts)|(components\/shared\/.*\.css)/,
+                    chunks: 'async',
+                    reuseExistingChunk: true,
+                    enforce: true,
+                },
             },
         },
     },
