@@ -1,4 +1,5 @@
 // Custom Element Registration
+// Remove async function when top-level await is supported
 (async () => {
     const { AppSample } = await import(/* webpackChunkName: "app-sample" */ './components/app-sample');
 
