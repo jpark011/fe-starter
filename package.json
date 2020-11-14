@@ -1,5 +1,5 @@
 {
-  "name": "fe-starter",
+  "name": "@jpark011/fe-starter",
   "version": "1.0.0",
   "description": "Bootstrap FE projects",
   "main": "src/main.ts",
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jpark011/fe-starter"
+    "url": "git+https://github.com/jpark011/fe-starter.git"
   },
   "keywords": [],
   "author": "Jay Park",
