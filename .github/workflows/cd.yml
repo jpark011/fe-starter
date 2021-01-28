@@ -8,9 +8,9 @@ on:
 jobs:
   cd:
     runs-on: ubuntu-latest
-    with:
-      github_token: ${{ secrets.GITHUB_TOKEN }}
-      publish_dir: ./public
+    env:
+      input_github_token: ${{ secrets.GITHUB_TOKEN }}
+      input_publish_dir: ./public
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
