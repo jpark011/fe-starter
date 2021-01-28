@@ -17,7 +17,7 @@ module.exports = {
     entry: {
         main: ['./src/main.ts', './src/style.css'],
     },
-    devtool: 'inline-source-map',
+    devtool: 'source-map',
     devServer: {
         contentBase: false,
     },
