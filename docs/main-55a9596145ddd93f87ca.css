@@ -1,0 +1,18 @@
+:root {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.light {
+}
+
+.dark {
+}
+
+body {
+    background: var(--background-color);
+    color: var(--foreground-color);
+    transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+}
+
+
+/*# sourceMappingURL=main-55a9596145ddd93f87ca.css.map*/
