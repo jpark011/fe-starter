@@ -51,7 +51,7 @@ module.exports = {
   output: {
     filename: 'runtime-[hash].bundle.js',
     chunkFilename: '[name]-[hash].bundle.js',
-    path: path.resolve(__dirname, 'public/docs/'),
+    path: path.resolve(__dirname, 'public/'),
   },
   optimization: {
     usedExports: true,
