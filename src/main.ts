@@ -1,3 +1,12 @@
+import * as Sentry from '@sentry/browser';
+import { Integrations } from '@sentry/tracing';
+
+Sentry.init({
+  dsn: 'https://a6375ca77cde49b58b64c42aad5a46d1@o512486.ingest.sentry.io/5612779',
+  integrations: [new Integrations.BrowserTracing()],
+  tracesSampleRate: 1.0,
+});
+
 // Custom Element Registration
 // Remove async function when top-level await is supported
 (async () => {
