@@ -27,7 +27,6 @@ jobs:
 
       - name: Release
         run: |
-          git config user.name
-          git config user.email
+          git config user.name ${{ github.actor }}
+          git config user.email ${{ github.actor }}@users.noreply.github.com
           npm run release
-
