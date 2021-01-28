@@ -43,7 +43,10 @@ module.exports = {
       patterns: ['./src/manifest.json'],
     }),
     // Turn on to analyze (visualize) bundle sizes
-    new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static',
+      openAnalyzer: false,
+    }),
   ],
   output: {
     filename: 'runtime-[hash].bundle.js',
