@@ -8,9 +8,7 @@ on:
 jobs:
   cd:
     runs-on: ubuntu-latest
-    env:
-      input_github_token: ${{ secrets.GITHUB_TOKEN }}
-      input_publish_dir: ./public
+
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -23,6 +21,13 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
 
       - name: Release
-        run: npm run release
+        run: |
+          git config user.name
+          git config user.email
+          npm run release
+
