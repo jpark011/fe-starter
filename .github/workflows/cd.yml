@@ -25,6 +25,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 
+      # TODO: use a marketplace actions
       - name: Release
         run: |
           git config user.name ${{ github.actor }}
